@@ -8,6 +8,12 @@ module.exports = {
     "setupFiles": [
       "./jest/globals.js"
     ], 
+// jest.config.js
+
+    reporters: [
+        "default",
+        [ "jest-junit", { suiteName: "jest tests" }, ]
+    ],
 
    // where to put the code coverage reports.
    "coverageDirectory": "./tests/coverage",
