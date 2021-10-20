@@ -22,6 +22,7 @@
     "jest": "^22.4.3",
     "jest-dev-server": "^4.4.0",
     "jest-puppeteer": "^4.4.0",
+    "jest-junit": "^13.0.0",
     "opener": "^1.4.0",
     "parcelify": "^0.12.5",
     "puppeteer": "^3.0.2"
