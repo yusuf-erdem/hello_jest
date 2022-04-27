@@ -11,5 +11,4 @@ function hello_jest_is_loaded() {
   return true;
 }
 
-
 export default hello_jest_is_loaded;
