@@ -1,18 +1,19 @@
 
-const { echo } = require('../src/echo');
+const { echox } = require('./echox');
 
-export function sum() {
+function sum() {
   let x = 34;
   let sum = x *3;
-  echo()
+  echox()
   return sum;
 }
 
-export function divide() {
+function divide() {
   let x = 34;
   let sum = x /3;
-  echo()
+  echox()
   return sum;
 }
 
+module.exports = {sum, divide}
 

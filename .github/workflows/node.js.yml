@@ -37,7 +37,7 @@ jobs:
       if: success() || failure()
       with:
         name: coverage-artifact
-        path: tests/coverage/*.xml
+        path: coverage/*.xml
 
       
 
