@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "files": [
     "dist/my_plugin.js",
-    "dist/index.js"
+    "dist/index.js",
+    "dist/index2.js"
   ],
   "dependencies": {
+    "jest-junit": "^13.0.0",
     "jquery": "^3.0.0"
   },
   "devDependencies": {
@@ -51,6 +53,7 @@
     "jquery",
     "plugin"
   ],
+
   "author": "Aaron Watters",
   "license": "ISC",
   "bugs": {

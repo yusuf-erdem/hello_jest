@@ -1,14 +1,9 @@
 
-// Require jQuery only if needed.
-if (!global.jQuery) {
-  global.jQuery = require('jquery');
+const { echo } = require('../src/echo');
+
+export function sum() {
+  let x = 34;
+  let sum = x *3;
+  echo()
+  return sum;
 }
-
-// my_plugin installs itself into the global jQuery object
-require("./my_plugin")
-
-function hello_jest_is_loaded() {
-  return true;
-}
-
-export default hello_jest_is_loaded;
