@@ -1,7 +1,8 @@
 // jest.config.js
 module.exports = {
     verbose: true,
-
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
     "coverageReporters": [
         "text",
         "cobertura"
@@ -10,7 +11,7 @@ module.exports = {
 
 // jest.config.js
 
-    "reporters": [ "default", "jest-junit" ],
+    "reporters": ["default", "jest-junit"],
 
     // where to put the code coverage reports.
     "coverageDirectory": "./coverage",
