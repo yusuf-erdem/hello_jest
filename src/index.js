@@ -7,3 +7,6 @@ export function sum() {
   echo()
   return sum;
 }
+
+
+export default hello_jest_is_loaded;
