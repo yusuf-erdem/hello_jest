@@ -1,12 +1,19 @@
 
-const { echo } = require('../src/echo');
+const { echox } = require('./echox');
 
-export function sum() {
+function sum() {
   let x = 34;
   let sum = x *3;
-  echo()
+  echox()
   return sum;
 }
 
+function divide() {
+  let x = 34;
+  let sum = x /3;
+  echox()
+  return sum;
+}
 
-export default hello_jest_is_loaded;
+module.exports = {sum, divide}
+

@@ -2,43 +2,18 @@
   "name": "hello_jest",
   "version": "1.0.0",
   "description": "Example npm module using jest for testing.",
-  "main": "dist/index.js",
-  "files": [
-    "dist/my_plugin.js",
-    "dist/index.js",
-    "dist/index2.js"
-  ],
-  "dependencies": {
-    "jest-junit": "^13.0.0",
-    "jquery": "^3.0.0"
-  },
+  "main": "src/index.js",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "browserify": "*",
     "coveralls": "^3.0.0",
-    "eslint": "^4.13.0",
-    "eslint-plugin-import": "^2.8.0",
-    "jest": "^22.4.3",
-    "jest-dev-server": "^4.4.0",
-    "jest-puppeteer": "^4.4.0",
-    "jest-junit": "^13.0.0",
-    "opener": "^1.4.0",
-    "parcelify": "^0.12.5",
-    "puppeteer": "^3.0.2"
+    "jest": "^27.0.0",
+    "jest-junit": "^13.2.0"
   },
   "scripts": {
-    "build-css": "touch html/bundle.css && parcelify html/entry.js -c html/bundle.css",
-    "build-js": "browserify html/entry.js > html/bundle.js",
-    "start": "npm run build-css && npm run build-js && opener html/index.html",
-    "build": "babel src -D -d dist && npm run build-css && npm run build-js",
-    "prepare": "npm run build",
     "test": "jest",
     "coverage": "jest --coverage",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
-    "lint": "eslint src test --ignore-pattern tests/coverage*"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "coveralls2": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage/lcov.info",
+    "coveralls3": "jest --coverage && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
